@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Linus Computer Tips</title>
+    <link rel="stylesheet"  href="LCT.css">
+
+</head>
+
+<body>
+      <div class="main">
+
+          <nav>
+              <a href="#" class="logo">LRCT</a>
+             <div class="nav-links">
+                  <ul>
+                      <li><a href="LRCT.html">Home</a></li>
+                      <li><a href="Computer%20Tips.html">Computer Tips</a></li>
+                      <li><a href="CPU.html">CPU Tips</a></li>
+                      <li><a href="#">GPU Tips</a></li>
+                      <li><a href="#">About us</a></li>
+                  </ul>
+              </div>
+          </nav>
+          <div class="feature M">
+          <h1>PC of the month</h1>
+      </div>
+          <div class="information">
+              <div>
+
+          </div>
+              <div class="overlay"></div>
+              <div class="PC"> <a href="Kakak.html"><img src="html/DDD.png" class="PC" id="PCBtn"></a></div>
+              <div>
+                  <div class="feature Mo">
+                      <h1>LCRT</h1>
+                  </div>
+              </div>
+
+              <div id="circle">
+
+                  <div class="feature one">
+                     <img src="html/CPU4.png">
+                      <div>
+                          <h1>Processor</h1>
+                          <p>AMD Ryzen 7 3800x</p>
+                      </div>
+                  </div>
+                  <div class="feature two">
+                      <img src="html/GPU3.png">
+                      <div>
+                          <h1>Graphics Card</h1>
+                          <p>Gigabyte RX 5700 XT Gaming OC 8G</p>
+                      </div>
+                  </div>
+                  <div class="feature three">
+                  <img src="html/Mobt.png">
+                      <div>
+                          <h1>Motherboard</h1>
+                          <p>MSI MPG X570 Gaming Pro Carbon Wifi</p>
+                      </div>
+              </div>
+                  <div class="feature four">
+                  <img src="html/RAM-removebg-preview.png">
+                      <div>
+                          <h1>RAM</h1>
+                          <p>Corsair Vengeance</p>
+                      </div>
+              </div>
+              </div>
+      </div>
+          <div class="controls">
+          <img src="html/ARROWuP-removebg-preview.png" id="UpBtn">
+          <h3>Features</h3>
+          <img src="html/ARROWuP-removebg-preview.png" id="DownBtn">
+      </div>
+          <div class="control">
+              <li><a href="">Watch more PC's.</a></li>
+
+
+          </div>
+
+</div>
+
+
+<script>
+    var circle = document.getElementById("circle");
+    var UpBtn  = document.getElementById("UpBtn");
+    var DownBtn = document.getElementById("DownBtn");
+    var PCBtn = document.getElementById("PCBtn")
+    var rotateValue = circle.style.transform;
+    var rotateSum;
+
+    UpBtn.onclick = function()
+    {
+        rotateSum = rotateValue + "rotate(-90deg)";
+        circle.style.transform = rotateSum;
+        rotateValue = rotateSum;
+    }
+    DownBtn.onclick = function()
+    {
+        rotateSum = rotateValue + "rotate(90deg)";
+        circle.style.transform = rotateSum;
+        rotateValue = rotateSum;
+    }
+
+</script>
+</body>
+</html>
